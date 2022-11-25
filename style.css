@@ -107,12 +107,12 @@ header button:hover svg path{
   border-radius: 1.2rem;
   border: 1px solid var(--border-color);
   overflow-y: auto;
-  height: 40rem;
+  height: 50rem;
 }
 
 /* scroll */
 /* width */
-.table-wrapper::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0.6rem;
   /* height: 0.6rem; */
 
@@ -134,7 +134,7 @@ header button:hover svg path{
 
 table{
   width: 100%;
-  border-spacing: 0;
+  border-collapse: collapse ;
 }
 
 table thead th{
@@ -202,12 +202,11 @@ table tbody button{
 
 table tbody tr{
   background-color: var(--odd-color);
-  border: 1px solid red;
 }
 
 table tbody tr:nth-child(even){
   background-color: var(--even-color);
-  /* border-bottom: 1pt solid var(--border-color);
-  border-top: 1px solid var(--border-color);  */
+  border-bottom: 1pt solid var(--border-color);
+  border-top: 1px solid var(--border-color); 
 }
 
