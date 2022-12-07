@@ -198,6 +198,7 @@ table tbody .user span{
 
 table tbody button{
   color: var(--remove-btn-color);
+  cursor: pointer;
 }
 
 table tbody tr{
