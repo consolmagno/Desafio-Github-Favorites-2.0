@@ -50,10 +50,20 @@ export class FavoritesView extends Favorites {
   constructor(root) {
     super(root)
 
-    this.tbody = this.root.querySelector('table tbody')
+    this.tbody = this.root.querySelector('table tbody.add-users')
+
+    this.emptyTbody = this.root.querySelector('table tbody.no-user')
 
     this.update()
     this.onadd()
+  }
+
+  Empty() {
+    if (this.entries.length == 0) {
+      this.emptyTbody.classList.remove('not_active')
+    } else {
+      this.emptyTbody.classList.add('not_active')
+    }
   }
 
   onadd() {
@@ -67,6 +77,7 @@ export class FavoritesView extends Favorites {
 
   update() {
     this.removeAlltr()
+    this.Empty()
 
     this.entries.forEach(user => {
       const row = this.createRow()

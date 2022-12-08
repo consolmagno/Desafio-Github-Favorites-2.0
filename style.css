@@ -112,7 +112,7 @@ header button:hover svg path{
   border-radius: 1.2rem;
   border: 1px solid var(--border-color);
   overflow-y: auto;
-  height: 50rem;
+  max-height: 50rem;
 }
 
 /* scroll */
@@ -164,11 +164,16 @@ table thead th:last-child{
 }
 
 /* Sem usuários */
+
+.no-user.not_active tr{
+  display: none;
+}
+
 .no-user td{
   font-weight: bold;
   font-size: 4rem;
   text-align: center;
-  padding: 24rem 22rem;
+  padding: 15rem 20rem;
 }
 
 .no-user td span{
