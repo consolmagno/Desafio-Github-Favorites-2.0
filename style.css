@@ -76,6 +76,11 @@ header input{
   width: max(46.2rem);
   font-size: 1.6rem;
   border-radius: 0.5rem;
+  color: var(--text-color);
+}
+
+header input:focus{
+  outline: none;
 }
 
 header button{
